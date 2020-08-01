@@ -6,7 +6,7 @@ export default {
   input: 'src/index.js',
   external,
   output: [
-    { format: 'cjs', file: pkg.main },
+    { format: 'cjs', file: pkg.main, exports: 'default' },
     { format: 'esm', file: pkg.module }
   ]
 };

@@ -10,8 +10,9 @@
   "author": "Rich Harris <richard.a.harris@gmail.com>",
   "homepage": "https://github.com/rollup/plugins/tree/master/packages/buble/#readme",
   "bugs": "https://github.com/rollup/plugins/issues",
-  "main": "dist/rollup-plugin-buble.cjs.js",
-  "module": "dist/rollup-plugin-buble.es.js",
+  "main": "dist/rollup-plugin-buble.cjs",
+  "module": "dist/rollup-plugin-buble.mjs",
+  "type": "commonjs",
   "engines": {
     "node": ">= 8.0.0"
   },

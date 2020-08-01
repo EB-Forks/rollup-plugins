@@ -12,6 +12,14 @@
   "bugs": "https://github.com/rollup/plugins/issues",
   "main": "./dist/cjs/index.js",
   "module": "./dist/es/index.js",
+  "type": "commonjs",
+  "exports": [
+    {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/es/index.js"
+    },
+    "./dist/cjs/index.js"
+  ],
   "engines": {
     "node": ">= 10.0.0"
   },
@@ -79,10 +87,5 @@
       "!**/recipes/**",
       "!**/types.ts"
     ]
-  },
-  "exports": {
-    "require": "./dist/cjs/index.js",
-    "import": "./dist/es/index.js"
-  },
-  "type": "commonjs"
+  }
 }

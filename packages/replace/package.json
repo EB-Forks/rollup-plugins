@@ -10,8 +10,16 @@
   "author": "Rich Harris <richard.a.harris@gmail.com>",
   "homepage": "https://github.com/rollup/plugins/tree/master/packages/replace#readme",
   "bugs": "https://github.com/rollup/plugins/issues",
-  "main": "dist/rollup-plugin-replace.cjs.js",
-  "module": "dist/rollup-plugin-replace.es.js",
+  "main": "dist/rollup-plugin-replace.cjs",
+  "module": "dist/rollup-plugin-replace.mjs",
+  "type": "commonjs",
+  "exports": [
+    {
+      "require": "./dist/rollup-plugin-replace.cjs",
+      "import": "./dist/rollup-plugin-replace.mjs"
+    },
+    "./dist/rollup-plugin-replace.cjs"
+  ],
   "scripts": {
     "build": "rollup -c",
     "ci:coverage": "nyc pnpm run test && nyc report --reporter=text-lcov > coverage.lcov",

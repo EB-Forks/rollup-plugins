@@ -11,7 +11,8 @@
   "homepage": "https://github.com/rollup/plugins/tree/master/packages/typescript/#readme",
   "bugs": "https://github.com/rollup/plugins/issues",
   "main": "dist/index.js",
-  "module": "dist/index.es.js",
+  "module": "dist/index.mjs",
+  "type": "commonjs",
   "engines": {
     "node": ">=8.0.0"
   },

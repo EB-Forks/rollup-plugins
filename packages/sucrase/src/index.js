@@ -4,7 +4,7 @@ const path = require('path');
 const { transform } = require('sucrase');
 const { createFilter } = require('@rollup/pluginutils');
 
-module.exports = function sucrase(opts = {}) {
+export default function sucrase(opts = {}) {
   const filter = createFilter(opts.include, opts.exclude);
 
   return {

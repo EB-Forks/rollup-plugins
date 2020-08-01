@@ -11,7 +11,14 @@
   "homepage": "https://github.com/rollup/plugins/tree/master/packages/babel#readme",
   "bugs": "https://github.com/rollup/plugins/issues",
   "main": "dist/index.js",
-  "module": "dist/index.es.js",
+  "module": "dist/index.mjs",
+  "type": "commonjs",
+  "exports": [
+    {
+      "require": "./dist/index.js"
+    },
+    "./dist/index.js"
+  ],
   "engines": {
     "node": ">= 10.0.0"
   },
